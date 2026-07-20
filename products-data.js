@@ -48,5 +48,9 @@ const PRODUCTS_DATA = [
 
   { "id": 48, "name": "Paleta de Sombras Neutra Purple 12 Shades", "brand": "Océane", "category": "sombra",
     "image": "foto-paleta-sombras-oceane-purple-12-shades.png",
-    "prices": { "mercadolivre": {"price": 50.42, "url": "https://meli.la/2Q7vvvr"} } }
+    "prices": { "mercadolivre": {"price": 50.42, "url": "https://meli.la/2Q7vvvr"} } },
+
+  { "id": 49, "name": "Bride Kit", "brand": "Fran by Franciny Ehlke", "category": "primer",
+    "image": "foto-bride-kit-fran-franciny-ehlke.png",
+    "prices": { "mercadolivre": {"price": 74.96, "url": "https://meli.la/1NSptHS"} } }
 ];
