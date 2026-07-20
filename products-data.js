@@ -44,5 +44,9 @@ const PRODUCTS_DATA = [
 
   { "id": 47, "name": "Máscara de Cílios Efeito Natural Definido", "brand": "Boca Rosa", "category": "rimel",
     "image": "foto-rimel-boca-rosa-marrom.png",
-    "prices": { "mercadolivre": {"price": 47.00, "url": "https://meli.la/1VKXMTw"} } }
+    "prices": { "mercadolivre": {"price": 47.00, "url": "https://meli.la/1VKXMTw"} } },
+
+  { "id": 48, "name": "Paleta de Sombras Neutra Purple 12 Shades", "brand": "Océane", "category": "sombra",
+    "image": "foto-paleta-sombras-oceane-purple-12-shades.png",
+    "prices": { "mercadolivre": {"price": 50.42, "url": "https://meli.la/2Q7vvvr"} } }
 ];
