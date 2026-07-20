@@ -28,5 +28,9 @@ const PRODUCTS_DATA = [
 
   { "id": 43, "name": "Base Líquida Matte Hidraluronic 26ml Tom V270", "brand": "Vult", "category": "base",
     "image": "foto-base-vult-matte-hidraluronic-v270.png",
-    "prices": { "mercadolivre": {"price": 35.10, "url": "https://meli.la/2rZRPNX"} } }
+    "prices": { "mercadolivre": {"price": 35.10, "url": "https://meli.la/2rZRPNX"} } },
+
+  { "id": 44, "name": "Base Líquida Matte Real Filter Tom C02", "brand": "Fran by Franciny Ehlke", "category": "base",
+    "image": "foto-base-fran-real-filter-c02.png",
+    "prices": { "mercadolivre": {"price": 78.99, "url": "https://meli.la/1WSZNZz"} } }
 ];
