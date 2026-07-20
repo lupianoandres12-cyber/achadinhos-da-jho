@@ -134,23 +134,24 @@ header p {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 2px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: 18px;
+  background: transparent;
 }
 
 .card {
   background: var(--cream);
+  border: 1px solid var(--line);
   border-radius: 0;
   box-shadow: none;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow .25s ease;
+  transition: box-shadow .25s ease, border-color .25s ease;
 }
 
 .card:hover {
   box-shadow: var(--shadow);
+  border-color: var(--rose);
   position: relative;
   z-index: 2;
 }
