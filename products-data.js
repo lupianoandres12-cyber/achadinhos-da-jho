@@ -36,5 +36,9 @@ const PRODUCTS_DATA = [
 
   { "id": 45, "name": "Base Líquida Bt Skin - 21 Tons", "brand": "Bruna Tavares", "category": "base",
     "image": "foto-base-bruna-tavares-bt-skin-21-tons.png",
-    "prices": { "mercadolivre": {"price": 74.09, "url": "https://meli.la/1BuVtDc"} } }
+    "prices": { "mercadolivre": {"price": 74.09, "url": "https://meli.la/1BuVtDc"} } },
+
+  { "id": 46, "name": "Kit C/7 Pincéis Profissionais Diamond Ed003", "brand": "Macrilan", "category": "pinceis",
+    "image": "foto-kit-pinceis-macrilan-diamond-branco.png",
+    "prices": { "mercadolivre": {"price": 77.96, "url": "https://meli.la/1WB9Dz2"} } }
 ];
