@@ -40,5 +40,9 @@ const PRODUCTS_DATA = [
 
   { "id": 46, "name": "Kit C/7 Pincéis Profissionais Diamond Ed003", "brand": "Macrilan", "category": "pinceis",
     "image": "foto-kit-pinceis-macrilan-diamond-branco.png",
-    "prices": { "mercadolivre": {"price": 77.96, "url": "https://meli.la/1WB9Dz2"} } }
+    "prices": { "mercadolivre": {"price": 77.96, "url": "https://meli.la/1WB9Dz2"} } },
+
+  { "id": 47, "name": "Máscara de Cílios Efeito Natural Definido", "brand": "Boca Rosa", "category": "rimel",
+    "image": "foto-rimel-boca-rosa-marrom.png",
+    "prices": { "mercadolivre": {"price": 47.00, "url": "https://meli.la/1VKXMTw"} } }
 ];
