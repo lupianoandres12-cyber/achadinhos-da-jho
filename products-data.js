@@ -20,5 +20,9 @@ const PRODUCTS_DATA = [
   // Produto real, com link de afiliado e foto de verdade (puxados do Mercado Livre)
   { "id": 41, "name": "Batom Líquido Feels Mood Ruby Rose Cor 13", "brand": "Ruby Rose", "category": "batom",
     "image": "foto-batom-ruby-rose-mood-13.png",
-    "prices": { "mercadolivre": {"price": 19.90, "url": "https://meli.la/1FETtp2"} } }
+    "prices": { "mercadolivre": {"price": 19.90, "url": "https://meli.la/1FETtp2"} } },
+
+  { "id": 42, "name": "Batom Líquido Duo Clinical Glam - Magenta Enigmático", "brand": "Eudora", "category": "batom",
+    "image": "foto-batom-eudora-magenta-enigmatico.png",
+    "prices": { "mercadolivre": {"price": 38.80, "url": "https://meli.la/22cX2rz"} } }
 ];
