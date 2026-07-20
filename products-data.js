@@ -32,5 +32,9 @@ const PRODUCTS_DATA = [
 
   { "id": 44, "name": "Base Líquida Matte Real Filter Tom C02", "brand": "Fran by Franciny Ehlke", "category": "base",
     "image": "foto-base-fran-real-filter-c02.png",
-    "prices": { "mercadolivre": {"price": 78.99, "url": "https://meli.la/1WSZNZz"} } }
+    "prices": { "mercadolivre": {"price": 78.99, "url": "https://meli.la/1WSZNZz"} } },
+
+  { "id": 45, "name": "Base Líquida Bt Skin - 21 Tons", "brand": "Bruna Tavares", "category": "base",
+    "image": "foto-base-bruna-tavares-bt-skin-21-tons.png",
+    "prices": { "mercadolivre": {"price": 74.09, "url": "https://meli.la/1BuVtDc"} } }
 ];
