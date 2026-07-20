@@ -52,5 +52,9 @@ const PRODUCTS_DATA = [
 
   { "id": 49, "name": "Bride Kit", "brand": "Fran by Franciny Ehlke", "category": "primer",
     "image": "foto-bride-kit-fran-franciny-ehlke.png",
-    "prices": { "mercadolivre": {"price": 74.96, "url": "https://meli.la/1NSptHS"} } }
+    "prices": { "mercadolivre": {"price": 74.96, "url": "https://meli.la/1NSptHS"} } },
+
+  { "id": 50, "name": "Chocochilli Gloss Acabamento Brilhante", "brand": "Fran by Franciny Ehlke", "category": "batom",
+    "image": "foto-gloss-chocochilli-fran-franciny-ehlke.png",
+    "prices": { "mercadolivre": {"price": 26.39, "url": "https://meli.la/216x3hv"} } }
 ];
