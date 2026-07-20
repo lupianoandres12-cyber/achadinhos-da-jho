@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  --rose: #d4a5a5;      /* dusty rose - accent suave */
+  --clay: #b87d6d;       /* terracota - accent secundário */
+  --sand: #e8d5c4;       /* areia - fundo quente */
+  --burgundy: #5d2e46;   /* bordô - contraste/texto de destaque */
+  --cream: #faf6f2;      /* fundo principal */
+  --ink: #2b2320;        /* texto principal, preto quente */
+  --muted: #8a7b74;      /* texto secundário */
+  --line: #e4d6cc;       /* bordas discretas */
+  --whatsapp: #25d366;
+  --radius: 4px;
+  --shadow: 0 2px 18px rgba(93, 46, 70, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Jost', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+header {
+  background: var(--burgundy);
+  color: var(--sand);
+  padding: 46px 20px 58px;
+  text-align: center;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.logo-badge {
+  width: 46px;
+  height: 46px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  margin: 10px 0 0;
+  opacity: 0.85;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 70px;
+}
+
+.toolbar {
+  background: transparent;
+  border-bottom: 1px solid var(--line);
+  padding: 28px 0 20px;
+  margin-bottom: 34px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 4px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--ink);
+  background: transparent;
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  outline: none;
+  color: var(--ink);
+}
+
+.search-box::placeholder { color: var(--muted); }
+.search-box:focus { border-bottom: 1px solid var(--burgundy); }
+
+.categories {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.cat-btn {
+  flex: 0 0 auto;
+  border: none;
+  background: none;
+  color: var(--muted);
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.cat-btn:hover { color: var(--ink); }
+
+.cat-btn.active {
+  color: var(--burgundy);
+  border-bottom: 1px solid var(--burgundy);
+}
+
+.results-count {
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin: 0 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.card {
+  background: var(--cream);
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .25s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.card-top {
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform .3s ease;
+}
+
+.card:hover .product-art {
+  transform: scale(1.04);
+}
+
+.card-top .cat-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.card-body {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.card-brand {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  min-height: 2.5em;
+  color: var(--ink);
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 2px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.84rem;
+  background: transparent;
+  transition: padding-left .15s ease;
+}
+
+.price-row:hover { padding-left: 6px; }
+
+.price-row.best {
+  color: var(--burgundy);
+}
+
+.price-row .store {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  letter-spacing: 0.02em;
+}
+
+.price-row .store::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--muted);
+  display: inline-block;
+}
+
+.price-row.store-ml .store::before { background: var(--burgundy); }
+.price-row.store-amazon .store::before { background: var(--clay); }
+.price-row.store-shopee .store::before { background: var(--rose); }
+
+.price-row .price {
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}
+
+.badge-best {
+  display: inline-block;
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  padding: 0;
+  margin-left: 8px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--burgundy);
+}
+
+.floating-links {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 50;
+}
+
+.fab {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: var(--cream);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(43, 35, 32, 0.25);
+  transition: transform .15s ease, opacity .15s ease;
+  opacity: 0.92;
+}
+
+.fab:hover { transform: translateY(-2px); opacity: 1; }
+
+.fab.whatsapp { background: var(--burgundy); }
+.fab.instagram { background: var(--clay); }
+
+.empty-state {
+  text-align: center;
+  color: var(--muted);
+  padding: 70px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+
+.disclaimer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 36px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 26px 20px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  letter-spacing: 0.02em;
+}
+
+footer a { color: var(--burgundy); text-decoration: none; border-bottom: 1px solid var(--burgundy); }

@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#5d2e46" stroke-width="1"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#5d2e46" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Botanical rose mark: five overlapping petals -->
+  <g transform="translate(60,60)">
+    <g fill="#b87d6d" opacity="0.9">
+      <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(288)"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#5d2e46"/>
+  </g>
+</svg>

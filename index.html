@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achadinhos de Maquiagem</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-brand">
+    <img src="logo.svg" alt="Logo" class="logo-badge">
+    <h1 id="site-name">Achadinhos da Jhô</h1>
+  </div>
+  <p id="site-tagline">Os melhores preços de maquiagem, tudo num lugar só</p>
+</header>
+
+<div class="container">
+  <div class="toolbar">
+    <input type="text" id="search" class="search-box" placeholder="Buscar produto ou marca (ex: batom, base, Ruby Rose...)">
+    <div class="categories" id="categories"></div>
+  </div>
+
+  <div class="results-count" id="results-count"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="disclaimer">
+  Este site contém links de afiliado. Se você comprar através de um desses links, podemos receber uma comissão,
+  sem nenhum custo adicional pra você. Preços exibidos são aproximados e podem ter mudado na loja de destino —
+  confira o valor final na página do produto antes de comprar.
+</div>
+
+<div class="floating-links">
+  <a id="whatsapp-fab" class="fab whatsapp" href="#" target="_blank" title="Entrar no grupo do WhatsApp" aria-label="WhatsApp">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 14.5c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4C9.4 9.2 9 8 8.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2z"/></svg>
+  </a>
+  <a id="instagram-fab" class="fab instagram" href="#" target="_blank" title="Seguir no Instagram" aria-label="Instagram">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+  </a>
+</div>
+
+<footer>
+  Feito para quem ama maquiagem · <a href="links.html">Todos os nossos links</a>
+</footer>
+
+<script src="config.js"></script>
+<script src="products-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

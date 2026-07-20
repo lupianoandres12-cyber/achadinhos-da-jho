@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@400;500&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Jost', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background: #5d2e46;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px;
+  }
+  .wrap { max-width: 400px; width: 100%; text-align: center; }
+  .avatar {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+  }
+  h1 {
+    color: #e8d5c4;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+    letter-spacing: 0.02em;
+  }
+  p.sub {
+    color: rgba(232, 213, 196, 0.7);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+  }
+  a.link-btn {
+    display: block;
+    background: transparent;
+    color: #e8d5c4;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid rgba(232, 213, 196, 0.35);
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  a.link-btn:hover {
+    background: rgba(232, 213, 196, 0.08);
+    border-color: #e8d5c4;
+  }
+  a.link-btn span.emoji { display: none; }
+  footer { color: rgba(232, 213, 196, 0.5); font-size: 0.68rem; margin-top: 26px; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img src="logo.svg" alt="Logo" class="avatar">
+    <h1 id="site-name">Achadinhos da Jhô</h1>
+    <p class="sub">Achadinhos de maquiagem</p>
+
+    <a class="link-btn" id="link-site" href="index.html">Ver catálogo completo com preços</a>
+    <a class="link-btn" id="link-whatsapp" href="#" target="_blank">Grupo do WhatsApp — avisos de promoção</a>
+    <a class="link-btn" id="link-instagram" href="#" target="_blank">Instagram</a>
+    <a class="link-btn" id="link-tiktok" href="#" target="_blank">TikTok</a>
+
+    <footer>Este perfil usa links de afiliado. Comprando por eles, você não paga nada a mais e ajuda o canal.</footer>
+  </div>
+
+<script src="config.js"></script>
+<script>
+  document.getElementById("site-name").textContent = SITE_CONFIG.siteName;
+  document.getElementById("link-whatsapp").href = SITE_CONFIG.whatsappGroupUrl;
+  document.getElementById("link-instagram").href = SITE_CONFIG.instagramUrl;
+  document.getElementById("link-tiktok").href = SITE_CONFIG.tiktokUrl;
+</script>
+</body>
+</html>
