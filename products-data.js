@@ -24,5 +24,9 @@ const PRODUCTS_DATA = [
 
   { "id": 42, "name": "Batom Líquido Duo Clinical Glam - Magenta Enigmático", "brand": "Eudora", "category": "batom",
     "image": "foto-batom-eudora-magenta-enigmatico.png",
-    "prices": { "mercadolivre": {"price": 38.80, "url": "https://meli.la/22cX2rz"} } }
+    "prices": { "mercadolivre": {"price": 38.80, "url": "https://meli.la/22cX2rz"} } },
+
+  { "id": 43, "name": "Base Líquida Matte Hidraluronic 26ml Tom V270", "brand": "Vult", "category": "base",
+    "image": "foto-base-vult-matte-hidraluronic-v270.png",
+    "prices": { "mercadolivre": {"price": 35.10, "url": "https://meli.la/2rZRPNX"} } }
 ];
