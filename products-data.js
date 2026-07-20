@@ -5,12 +5,16 @@
 // Assim que mais links forem confirmados, novos itens entram na lista.
 const PRODUCTS_DATA = [
   { "id": 2, "name": "Batom Cremoso Hidra Lips Terracota Âmbar", "brand": "Vult", "category": "batom",
+    "image": "foto-batom-cremoso-vult-terracota-ambar.png",
     "prices": { "mercadolivre": {"price": 30.30, "url": "https://meli.la/1QZrCga"} } },
   { "id": 3, "name": "Batom Líquido Glam Duo Clinical", "brand": "Eudora", "category": "batom",
+    "image": "foto-batom-liquido-eudora-glam-duo.png",
     "prices": { "mercadolivre": {"price": 62.90, "url": "https://meli.la/1u4S8pz"} } },
   { "id": 6, "name": "Base Matte Cor 330", "brand": "Vult", "category": "base",
+    "image": "foto-base-matte-vult-330.png",
     "prices": { "mercadolivre": {"price": 30.90, "url": "https://meli.la/2J5BsJu"} } },
   { "id": 7, "name": "Base Líquida Soft Blend Matte Tom F20", "brand": "Ruby Rose", "category": "base",
+    "image": "foto-base-soft-blend-ruby-rose-f20.png",
     "prices": { "mercadolivre": {"price": 23.90, "url": "https://meli.la/2vaWdqa"} } },
 
   // Produto real, com link de afiliado e foto de verdade (puxados do Mercado Livre)
