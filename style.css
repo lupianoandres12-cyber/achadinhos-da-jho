@@ -35,15 +35,15 @@ header {
 
 .header-brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo-badge {
-  width: 46px;
-  height: 46px;
+  width: 64px;
+  height: 64px;
 }
 
 header h1 {
