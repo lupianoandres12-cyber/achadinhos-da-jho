@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap');
 
 :root {
-  --rose: #d4a5a5;      /* dusty rose - accent suave */
-  --clay: #b87d6d;       /* terracota - accent secundário */
-  --sand: #e8d5c4;       /* areia - fundo quente */
-  --burgundy: #5d2e46;   /* bordô - contraste/texto de destaque */
-  --cream: #faf6f2;      /* fundo principal */
+  --rose: #a57c7e;      /* rosé-vinho suave - accent */
+  --clay: #8d5c64;       /* vinho claro - accent secundário */
+  --sand: #e4c5a8;       /* areia quente - fundo dos cards */
+  --burgundy: #541226;   /* vinho profundo - contraste/texto de destaque (cor da logo) */
+  --cream: #f6e6d6;      /* fundo principal (cor de fundo da logo) */
   --ink: #2b2320;        /* texto principal, preto quente */
   --muted: #8a7b74;      /* texto secundário */
-  --line: #e4d6cc;       /* bordas discretas */
+  --line: #dec6bc;       /* bordas discretas */
   --whatsapp: #25d366;
   --radius: 4px;
-  --shadow: 0 2px 18px rgba(93, 46, 70, 0.08);
+  --shadow: 0 2px 18px rgba(84, 18, 38, 0.08);
 }
 
 * { box-sizing: border-box; }
