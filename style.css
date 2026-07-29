@@ -21,8 +21,8 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: 'Jost', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
-  background: var(--cream);
-  color: var(--ink);
+  background: var(--burgundy);
+  color: var(--sand);
   font-weight: 400;
 }
 
@@ -54,13 +54,13 @@ header {
 }
 
 .header-bottom {
-  background: var(--burgundy);
+  background: var(--cream);
   padding: 14px 20px 28px;
 }
 
 .header-bottom p {
   margin: 0;
-  color: var(--sand);
+  color: var(--burgundy);
   opacity: 0.9;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
@@ -76,7 +76,7 @@ header {
 
 .toolbar {
   background: transparent;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(246, 230, 214, 0.25);
   padding: 28px 0 20px;
   margin-bottom: 34px;
 }
@@ -86,17 +86,17 @@ header {
   padding: 12px 4px;
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--sand);
   background: transparent;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
   margin-bottom: 20px;
   outline: none;
-  color: var(--ink);
+  color: var(--cream);
 }
 
-.search-box::placeholder { color: var(--muted); }
-.search-box:focus { border-bottom: 1px solid var(--burgundy); }
+.search-box::placeholder { color: rgba(246, 230, 214, 0.5); }
+.search-box:focus { border-bottom: 1px solid var(--rose); }
 
 .categories {
   display: flex;
@@ -109,7 +109,7 @@ header {
   flex: 0 0 auto;
   border: none;
   background: none;
-  color: var(--muted);
+  color: rgba(246, 230, 214, 0.55);
   padding: 4px 0;
   border-bottom: 1px solid transparent;
   font-family: 'Jost', sans-serif;
@@ -122,16 +122,16 @@ header {
   transition: color .2s ease, border-color .2s ease;
 }
 
-.cat-btn:hover { color: var(--ink); }
+.cat-btn:hover { color: var(--cream); }
 
 .cat-btn.active {
-  color: var(--burgundy);
-  border-bottom: 1px solid var(--burgundy);
+  color: var(--rose);
+  border-bottom: 1px solid var(--rose);
 }
 
 .results-count {
   font-size: 0.78rem;
-  color: var(--muted);
+  color: rgba(246, 230, 214, 0.55);
   letter-spacing: 0.04em;
   margin: 0 0 20px;
 }
@@ -321,7 +321,7 @@ header {
 
 .empty-state {
   text-align: center;
-  color: var(--muted);
+  color: rgba(246, 230, 214, 0.6);
   padding: 70px 20px;
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -332,7 +332,7 @@ header {
   margin: 0 auto;
   padding: 0 20px 36px;
   font-size: 0.7rem;
-  color: var(--muted);
+  color: rgba(246, 230, 214, 0.55);
   text-align: center;
   line-height: 1.6;
 }
@@ -341,9 +341,9 @@ footer {
   text-align: center;
   padding: 26px 20px;
   font-size: 0.72rem;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
+  color: rgba(246, 230, 214, 0.55);
+  border-top: 1px solid rgba(246, 230, 214, 0.2);
   letter-spacing: 0.02em;
 }
 
-footer a { color: var(--burgundy); text-decoration: none; border-bottom: 1px solid var(--burgundy); }
+footer a { color: var(--rose); text-decoration: none; border-bottom: 1px solid var(--rose); }
