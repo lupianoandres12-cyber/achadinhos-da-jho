@@ -56,5 +56,65 @@ const PRODUCTS_DATA = [
 
   { "id": 50, "name": "Chocochilli Gloss Acabamento Brilhante", "brand": "Fran by Franciny Ehlke", "category": "batom",
     "image": "foto-gloss-chocochilli-fran-franciny-ehlke.png",
-    "prices": { "mercadolivre": {"price": 26.39, "url": "https://meli.la/216x3hv"} } }
+    "prices": { "mercadolivre": {"price": 26.39, "url": "https://meli.la/216x3hv"} } },
+
+  { "id": 51, "name": "Batom Hydra Fps 8 Faces 3,5g Vino 540", "brand": "Natura", "category": "batom",
+    "image": "foto-batom-natura-faces-vino-540.png",
+    "prices": { "mercadolivre": {"price": 19.13, "url": "https://meli.la/1dA7113"} } },
+
+  { "id": 52, "name": "Base Líquida Bt Skin L30 40ml Tom Bege", "brand": "Bruna Tavares", "category": "base",
+    "image": "foto-base-bruna-tavares-bt-skin-l30.png",
+    "prices": { "mercadolivre": {"price": 75.97, "url": "https://meli.la/2Bt9Zua"} } },
+
+  { "id": 53, "name": "Bt Transition - Paleta De Sombras 10 Cores", "brand": "Bruna Tavares", "category": "sombra",
+    "image": "foto-paleta-sombras-bruna-tavares-bt-transition.png",
+    "prices": { "mercadolivre": {"price": 71.60, "url": "https://meli.la/2HFu2gi"} } },
+
+  { "id": 54, "name": "Blush Stick Multifuncional - Bt Coca-Cola", "brand": "Bruna Tavares", "category": "blush",
+    "image": "foto-blush-stick-bruna-tavares-coca-cola.png",
+    "prices": { "mercadolivre": {"price": 59.73, "url": "https://meli.la/1uWLwqs"} } },
+
+  { "id": 55, "name": "Esponja De Maquiagem Soft Blender Feels", "brand": "Ruby Rose", "category": "pinceis",
+    "image": "foto-esponja-ruby-rose-feels-soft-blender.png",
+    "prices": { "mercadolivre": {"price": 20.98, "url": "https://meli.la/1oE1XBz"} } },
+
+  { "id": 56, "name": "Bruma Fix Tudo Alta Fixação 150ml", "brand": "Dailus", "category": "primer",
+    "image": "foto-bruma-fixadora-dailus-fix-tudo.png",
+    "prices": { "mercadolivre": {"price": 57.99, "url": "https://meli.la/2kdSg8C"} } },
+
+  { "id": 57, "name": "Corretivo Líquido Blow So Real Tom 1-CBW10", "brand": "Ruby Rose", "category": "corretivo",
+    "image": "foto-corretivo-ruby-rose-blow-so-real-cbw10.png",
+    "prices": { "mercadolivre": {"price": 20.32, "url": "https://meli.la/1bdj7se"} } },
+
+  { "id": 58, "name": "Gloss Lip Honey", "brand": "Fran by Franciny Ehlke", "category": "batom",
+    "image": "foto-gloss-fran-franciny-ehlke-lip-honey.png",
+    "prices": { "mercadolivre": {"price": 18.28, "url": "https://meli.la/1EaMWcH"} } },
+
+  { "id": 59, "name": "Máscara de Cílios The Colossal Waterproof 8ml", "brand": "Maybelline", "category": "rimel",
+    "image": "foto-rimel-maybelline-colossal-waterproof.png",
+    "prices": { "mercadolivre": {"price": 48.01, "url": "https://meli.la/14GpcFz"} } },
+
+  { "id": 60, "name": "Corretivo Líquido Cover Up Tom MMC02", "brand": "Mari Maria Makeup", "category": "corretivo",
+    "image": "foto-corretivo-mari-maria-cover-up-mmc02.png",
+    "prices": { "mercadolivre": {"price": 39.00, "url": "https://meli.la/1qep8hM"} } },
+
+  { "id": 61, "name": "Paleta De Sombras Special Day 25g", "brand": "Océane", "category": "sombra",
+    "image": "foto-paleta-sombras-oceane-special-day.png",
+    "prices": { "mercadolivre": {"price": 65.60, "url": "https://meli.la/1Avw4fc"} } },
+
+  { "id": 62, "name": "Kit 3 Pincel Chanfrado Design de Sobrancelha", "brand": "Genérica", "category": "pinceis",
+    "image": "foto-kit-pincel-chanfrado-design-sobrancelha.png",
+    "prices": { "mercadolivre": {"price": 19.00, "url": "https://meli.la/19NgPqj"} } },
+
+  { "id": 63, "name": "Gloss Franboesa", "brand": "Fran by Franciny Ehlke", "category": "batom",
+    "image": "foto-gloss-fran-franciny-ehlke-franboesa.png",
+    "prices": { "mercadolivre": {"price": 36.04, "url": "https://meli.la/1sjUpCe"} } },
+
+  { "id": 64, "name": "Base BB Cream Dermo Expertise 5 em 1 Fps20 30ml", "brand": "L'Oréal Paris", "category": "base",
+    "image": "foto-base-bb-cream-loreal-dermo-expertise.png",
+    "prices": { "mercadolivre": {"price": 44.99, "url": "https://meli.la/2Et23pq"} } },
+
+  { "id": 65, "name": "Kit 3 Esponjas Para Maquiagem EP20", "brand": "Macrilan", "category": "pinceis",
+    "image": "foto-kit-esponjas-macrilan-ep20.png",
+    "prices": { "mercadolivre": {"price": 19.77, "url": "https://meli.la/2uHe1oa"} } }
 ];
