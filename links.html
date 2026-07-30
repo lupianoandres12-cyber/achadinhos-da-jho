@@ -143,6 +143,53 @@
     line-height: 1.7;
   }
   footer .heart { color: var(--rose); }
+
+  .niche-banner {
+    display: inline-block;
+    background: rgba(228, 197, 168, 0.12);
+    border: 1px solid rgba(228, 197, 168, 0.3);
+    color: var(--sand);
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+    padding: 7px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  a.cat-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background: rgba(228, 197, 168, 0.06);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 12px 8px;
+    border: 1px solid rgba(228, 197, 168, 0.22);
+    border-radius: 14px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  }
+  a.cat-chip:hover {
+    background: rgba(228, 197, 168, 0.14);
+    border-color: var(--rose);
+    transform: translateY(-2px);
+  }
+
+  .urgency-note {
+    color: var(--rose);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin: -6px 0 14px;
+  }
 </style>
 </head>
 <body>
@@ -155,12 +202,22 @@
     <h1 id="site-name">Achadinhos da Jhô</h1>
     <p class="sub">beleza &amp; achados</p>
 
+    <div class="niche-banner">✨ Novidade: agora também skincare, cabelo, perfume e suplementos</div>
+
+    <div class="cat-grid">
+      <a class="cat-chip" href="index.html?cat=skincare">🧴 Skincare</a>
+      <a class="cat-chip" href="index.html?cat=cabelo">💇‍♀️ Cabelo</a>
+      <a class="cat-chip" href="index.html?cat=perfume">🌸 Perfumes</a>
+      <a class="cat-chip" href="index.html?cat=suplementos">💊 Suplementos</a>
+    </div>
+
     <a class="link-btn primary" id="link-site" href="index.html">
       <span class="icon">🛍️</span> Ver catálogo completo com preços
     </a>
     <a class="link-btn" id="link-whatsapp" href="#" target="_blank">
-      <span class="icon">💌</span> Grupo VIP no WhatsApp — promo em primeira mão
+      <span class="icon">💌</span> Grupo VIP no WhatsApp — ofertas em primeira mão
     </a>
+    <p class="urgency-note">🔥 Preço bom não espera — as melhores ofertas saem do grupo primeiro</p>
 
     <div class="divider">me segue por aqui também</div>
 
