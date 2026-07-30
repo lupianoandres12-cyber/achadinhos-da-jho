@@ -146,5 +146,29 @@ const PRODUCTS_DATA = [
 
   { "id": 71, "name": "Pro Óleo Sublime Reparador 48h Sem Frizz 100ml", "brand": "Eico", "category": "cabelo",
     "image": "foto-oleo-capilar-eico-pro-sublime.png",
-    "prices": { "mercadolivre": {"price": 43.90, "originalPrice": 69.90, "url": "https://meli.la/1TFfq3K"} } }
+    "prices": { "mercadolivre": {"price": 43.90, "originalPrice": 69.90, "url": "https://meli.la/1TFfq3K"} } },
+
+  { "id": 72, "name": "Pó Compacto Controle de Oleosidade e Acabamento", "brand": "Sace Lady", "category": "base",
+    "image": "foto-po-compacto-sace-lady.png",
+    "prices": { "mercadolivre": {"price": 54.00, "originalPrice": 69.99, "url": "https://meli.la/2Wfbf9F"} } },
+
+  { "id": 73, "name": "Corretivo Instant Age Rewind Multiuso Cor 120 Light 6ml", "brand": "Maybelline", "category": "corretivo",
+    "image": "foto-corretivo-maybelline-instant-age-rewind.png",
+    "prices": { "mercadolivre": {"price": 81.92, "originalPrice": 111.79, "url": "https://meli.la/2aEAEyP"} } },
+
+  { "id": 74, "name": "Gel Ácido Mandélico Clareador Antiacne 30g", "brand": "Creamy", "category": "skincare",
+    "image": "foto-acido-mandelico-creamy.png",
+    "prices": { "mercadolivre": {"price": 76.44, "originalPrice": 84.00, "url": "https://meli.la/2KEdKRm"} } },
+
+  { "id": 75, "name": "Kit Rotina de Skincare Pele Sensível com Protetor Solar FPS 60", "brand": "Principia", "category": "skincare",
+    "image": "foto-kit-principia-pele-sensivel-fps60.png",
+    "prices": { "mercadolivre": {"price": 160.99, "originalPrice": 162.00, "url": "https://meli.la/19fL5np"} } },
+
+  { "id": 76, "name": "Creme de Pentear Definição Extraordinária 1kg", "brand": "Salon Line", "category": "cabelo",
+    "image": "foto-creme-pentear-salon-line.png",
+    "prices": { "mercadolivre": {"price": 35.80, "originalPrice": 40.00, "url": "https://meli.la/1zBY89q"} } },
+
+  { "id": 77, "name": "Gummy Cabelo, Pele e Unha Sabor Tutti Frutti 30un", "brand": "Active Life", "category": "suplementos",
+    "image": "foto-gummy-cabelo-pele-unha-active-life.png",
+    "prices": { "mercadolivre": {"price": 39.53, "originalPrice": 67.00, "url": "https://meli.la/2pRDHr2"} } }
 ];
