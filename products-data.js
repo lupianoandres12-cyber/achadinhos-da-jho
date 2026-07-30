@@ -122,5 +122,29 @@ const PRODUCTS_DATA = [
 
   { "id": 65, "name": "Kit 3 Esponjas Para Maquiagem EP20", "brand": "Macrilan", "category": "pinceis",
     "image": "foto-kit-esponjas-macrilan-ep20.png",
-    "prices": { "mercadolivre": {"price": 19.77, "originalPrice": 32.00, "url": "https://meli.la/2uHe1oa"} } }
+    "prices": { "mercadolivre": {"price": 19.77, "originalPrice": 32.00, "url": "https://meli.la/2uHe1oa"} } },
+
+  { "id": 66, "name": "Kit Facial Completo 3 Passos Hidratação e Colágeno", "brand": "Kokeshi", "category": "skincare",
+    "image": "foto-kit-facial-kokeshi-3-passos.png",
+    "prices": { "mercadolivre": {"price": 64.51, "originalPrice": 93.90, "url": "https://meli.la/1VwrjM2"} } },
+
+  { "id": 67, "name": "Gel de Limpeza Facial Pele Normal a Oleosa com Niacinamida 454g", "brand": "CeraVe", "category": "skincare",
+    "image": "foto-gel-limpeza-facial-cerave.png",
+    "prices": { "mercadolivre": {"price": 73.79, "originalPrice": 115.90, "url": "https://meli.la/2WdYr3J"} } },
+
+  { "id": 68, "name": "Perfume Feminino Diva Esplêndida Deo Colônia 100ml", "brand": "Eudora", "category": "perfume",
+    "image": "foto-perfume-eudora-diva-esplendida.png",
+    "prices": { "mercadolivre": {"price": 96.90, "originalPrice": 149.90, "url": "https://meli.la/2Z4bpDr"} } },
+
+  { "id": 69, "name": "Dupla Body Splash Very Sexy e Roses 200ml", "brand": "Barbour's Beauty", "category": "perfume",
+    "image": "foto-body-splash-barbours-very-sexy-roses.png",
+    "prices": { "mercadolivre": {"price": 79.28, "originalPrice": 123.90, "url": "https://meli.la/1ncVdZv"} } },
+
+  { "id": 70, "name": "Máscara Capilar Disciplinante Xapadinha 450g", "brand": "Lola From Rio", "category": "cabelo",
+    "image": "foto-mascara-capilar-lola-xapadinha.png",
+    "prices": { "mercadolivre": {"price": 29.29, "originalPrice": 59.90, "url": "https://meli.la/2ZicRYD"} } },
+
+  { "id": 71, "name": "Pro Óleo Sublime Reparador 48h Sem Frizz 100ml", "brand": "Eico", "category": "cabelo",
+    "image": "foto-oleo-capilar-eico-pro-sublime.png",
+    "prices": { "mercadolivre": {"price": 43.90, "originalPrice": 69.90, "url": "https://meli.la/1TFfq3K"} } }
 ];
