@@ -170,5 +170,41 @@ const PRODUCTS_DATA = [
 
   { "id": 77, "name": "Gummy Cabelo, Pele e Unha Sabor Tutti Frutti 30un", "brand": "Active Life", "category": "suplementos",
     "image": "foto-gummy-cabelo-pele-unha-active-life.png",
-    "prices": { "mercadolivre": {"price": 39.53, "originalPrice": 67.00, "url": "https://meli.la/2pRDHr2"} } }
+    "prices": { "mercadolivre": {"price": 39.53, "originalPrice": 67.00, "url": "https://meli.la/2pRDHr2"} } },
+
+  { "id": 78, "name": "Óleo Capilar Oil Reflections Light 30ml", "brand": "Wella", "category": "cabelo",
+    "image": "screenshot-1785506470008-d79483b9.jpg",
+    "prices": { "mercadolivre": {"price": 62.46, "originalPrice": 78.85, "url": "https://meli.la/2oNoLs8"} } },
+
+  { "id": 79, "name": "Creamy Skincare Calming Cream 40g", "brand": "Creamy", "category": "skincare",
+    "image": "screenshot-1785506512113-7c42a3a2.jpg",
+    "prices": { "mercadolivre": {"price": 52.60, "originalPrice": 109.90, "url": "https://meli.la/1NqUxUv"} } },
+
+  { "id": 80, "name": "Ciclo Hello Hello! Eau de Cologne Feminina 100ml", "brand": "Ciclo", "category": "perfume",
+    "image": "screenshot-1785506547352-28a0fcb6.jpg",
+    "prices": { "mercadolivre": {"price": 97.55, "originalPrice": 109.99, "url": "https://meli.la/2jagN42"} } },
+
+  { "id": 81, "name": "Kit Braé Essential 260ml + Divine Plume", "brand": "Braé", "category": "cabelo",
+    "image": "screenshot-1785506584990-93e127ed.jpg",
+    "prices": { "mercadolivre": {"price": 134.80, "originalPrice": 141.90, "url": "https://meli.la/19KAgJ4"} } },
+
+  { "id": 82, "name": "Gloss Labial Lip Bunny Triple", "brand": "Fran By Franciny Ehlke", "category": "batom",
+    "image": "screenshot-1785506624200-999f76e0.jpg",
+    "prices": { "mercadolivre": {"price": 36.91, "originalPrice": 129.90, "url": "https://meli.la/2xGNoJi"} } },
+
+  { "id": 83, "name": "Base Time Wise 3D Matte", "brand": "Mary Kay", "category": "base",
+    "image": "screenshot-1785506651459-3bd41a3a.jpg",
+    "prices": { "mercadolivre": {"price": 68.65, "originalPrice": 78.90, "url": "https://meli.la/1cWKk4n"} } },
+
+  { "id": 84, "name": "Corretivo de Olhos Yellow Tone", "brand": "Mary Kay", "category": "corretivo",
+    "image": "screenshot-1785506666683-c511811a.jpg",
+    "prices": { "mercadolivre": {"price": 46.31, "originalPrice": 83.30, "url": "https://meli.la/2Xfekaz"} } },
+
+  { "id": 85, "name": "Derma Bloom Suplemento Renovador em Pó 90g", "brand": "Flylabs", "category": "suplementos",
+    "image": "screenshot-1785506683017-cdd3a2bd.jpg",
+    "prices": { "mercadolivre": {"price": 76.15, "originalPrice": 197.00, "url": "https://meli.la/17e8mbw"} } },
+
+  { "id": 86, "name": "Máscara de Hidratação Morte Súbita 450g", "brand": "Lola Cosmetics", "category": "cabelo",
+    "image": "screenshot-1785506700656-935a0e62.jpg",
+    "prices": { "mercadolivre": {"price": 33.24, "originalPrice": 59.90, "url": "https://meli.la/1VTtQF4"} } }
 ];
