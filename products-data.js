@@ -206,5 +206,29 @@ const PRODUCTS_DATA = [
 
   { "id": 86, "name": "Máscara de Hidratação Morte Súbita 450g", "brand": "Lola Cosmetics", "category": "cabelo",
     "image": "screenshot-1785506700656-935a0e62.jpg",
-    "prices": { "mercadolivre": {"price": 33.24, "originalPrice": 59.90, "url": "https://meli.la/1VTtQF4"} } }
+    "prices": { "mercadolivre": {"price": 33.24, "originalPrice": 59.90, "url": "https://meli.la/1VTtQF4"} } },
+
+  { "id": 87, "name": "Glosslicious Kit Gloss Labial", "brand": "Fran By Franciny Ehlke", "category": "batom",
+    "image": "screenshot-1785606861888-9e980d49.jpg",
+    "prices": { "mercadolivre": {"price": 47.69, "originalPrice": 76.99, "url": "https://meli.la/1VRwgf7"} } },
+
+  { "id": 88, "name": "Corretivo Líquido Facial Melu", "brand": "Ruby Rose", "category": "corretivo",
+    "image": "screenshot-1785606903747-02dedda6.jpg",
+    "prices": { "mercadolivre": {"price": 26.10, "originalPrice": 29.90, "url": "https://meli.la/1METM9t"} } },
+
+  { "id": 89, "name": "Perfume Luxuoso Golden Eau de Parfum 75ml", "brand": "Eudora", "category": "perfume",
+    "image": "screenshot-1785606969646-784b68e1.jpg",
+    "prices": { "mercadolivre": {"price": 157.70, "originalPrice": 229.90, "url": "https://meli.la/2jTAas9"} } },
+
+  { "id": 90, "name": "Máscara Capilar Rapunzel Crescimento Fortificante 450g", "brand": "Lola Cosmetics", "category": "cabelo",
+    "image": "screenshot-1785606996626-fbfa73e2.jpg",
+    "prices": { "mercadolivre": {"price": 38.90, "originalPrice": 59.90, "url": "https://meli.la/1ZMeg5m"} } },
+
+  { "id": 91, "name": "Kit Siàge Acelera o Crescimento Shampoo + Condicionador", "brand": "Eudora", "category": "cabelo",
+    "image": "screenshot-1785607028273-f948d923.jpg",
+    "prices": { "mercadolivre": {"price": 82.38, "originalPrice": 102.98, "url": "https://meli.la/1BUFqCT"} } },
+
+  { "id": 92, "name": "Body Splash Cuide-se Bem Deleite 200ml", "brand": "O Boticário", "category": "perfume",
+    "image": "screenshot-1785607070360-764d53fe.jpg",
+    "prices": { "mercadolivre": {"price": 78.99, "url": "https://meli.la/1zCxPVR"} } }
 ];
