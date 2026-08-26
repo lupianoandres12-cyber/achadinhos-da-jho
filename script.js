@@ -63,6 +63,8 @@ function applyBranding() {
   if (announceWhats) announceWhats.href = SITE_CONFIG.whatsappGroupUrl;
   var igHeader = document.getElementById("instagram-header");
   if (igHeader) igHeader.href = SITE_CONFIG.instagramUrl;
+  var ctaWhats = document.getElementById("cta-whatsapp");
+  if (ctaWhats) ctaWhats.href = SITE_CONFIG.whatsappGroupUrl;
 }
 
 function cheapestStore(prices) {
