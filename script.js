@@ -49,6 +49,8 @@ const URGENCY_THRESHOLD = 40;
 let ALL_PRODUCTS = [];
 let currentCategory = "todos";
 let currentSearch = "";
+let showAll = false;
+const INITIAL_LIMIT = 8;
 
 function applyBranding() {
   document.title = SITE_CONFIG.siteName;
@@ -87,6 +89,7 @@ function renderCategories() {
     btn.textContent = label;
     btn.onclick = () => {
       currentCategory = key;
+      showAll = false;
       renderCategories();
       renderProducts();
     };
@@ -97,6 +100,9 @@ function renderCategories() {
 function renderProducts() {
   const grid = document.getElementById("grid");
   const countEl = document.getElementById("results-count");
+  const showMoreWrap = document.getElementById("show-more-wrap");
+  const showMoreBtn = document.getElementById("show-more-btn");
+  const sectionTitle = document.getElementById("section-title");
   grid.innerHTML = "";
 
   const filtered = ALL_PRODUCTS.filter(p => {
@@ -105,14 +111,29 @@ function renderProducts() {
     return matchesCategory && matchesSearch;
   });
 
+  // na visão geral (sem busca/filtro) mostramos só uma seleção curada, pra não parecer uma vitrine lotada
+  const isCurated = currentCategory === "todos" && currentSearch === "" && !showAll;
+  const visible = isCurated ? filtered.slice(0, INITIAL_LIMIT) : filtered;
+
+  if (sectionTitle) {
+    sectionTitle.textContent = isCurated ? "🔥 Achadinhos em destaque" : "Todos os produtos";
+  }
+
   countEl.textContent = `${filtered.length} produto(s) encontrado(s)`;
+
+  if (showMoreWrap) {
+    showMoreWrap.style.display = (isCurated && filtered.length > INITIAL_LIMIT) ? "flex" : "none";
+  }
+  if (showMoreBtn) {
+    showMoreBtn.textContent = `Ver todos os produtos (${filtered.length})`;
+  }
 
   if (filtered.length === 0) {
     grid.innerHTML = `<div class="empty-state">Nenhum produto encontrado. Tente buscar outro termo.</div>`;
     return;
   }
 
-  filtered.forEach((p, idx) => {
+  visible.forEach((p, idx) => {
     const best = cheapestStore(p.prices);
     const bestData = p.prices[best];
 
@@ -168,8 +189,17 @@ function init() {
 
   document.getElementById("search").addEventListener("input", (e) => {
     currentSearch = e.target.value;
+    showAll = false;
     renderProducts();
   });
+
+  var showMoreBtn = document.getElementById("show-more-btn");
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener("click", () => {
+      showAll = true;
+      renderProducts();
+    });
+  }
 }
 
 init();
