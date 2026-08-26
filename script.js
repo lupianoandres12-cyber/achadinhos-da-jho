@@ -153,8 +153,9 @@ function renderProducts() {
 
     const ctaText = CTA_LABELS[p.category] || CTA_FALLBACK;
 
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className = "card";
+    card.href = `produto.html?id=${p.id}`;
     card.style.animationDelay = (Math.min(idx, 16) * 35) + "ms";
     card.innerHTML = `
       <div class="card-top">
@@ -169,13 +170,13 @@ function renderProducts() {
         <div class="card-name">${p.name}</div>
         <div class="price-list">
           ${Object.entries(p.prices).map(([store, data]) => `
-            <a class="price-row store-${store} ${store === best ? 'best' : ''}" href="${data.url}" target="_blank" rel="noopener sponsored">
+            <div class="price-row store-${store} ${store === best ? 'best' : ''}">
               <span class="store">${STORE_LABELS[store]}</span>
               <span class="price">${formatPrice(data.price)}${store === best ? '<span class="badge-best">MELHOR</span>' : ''}</span>
-            </a>
+            </div>
           `).join("")}
         </div>
-        <a class="card-cta" href="${bestData.url}" target="_blank" rel="noopener sponsored">${ctaText} →</a>
+        <div class="card-cta">${ctaText} →</div>
       </div>
     `;
     grid.appendChild(card);
