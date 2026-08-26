@@ -14,6 +14,7 @@
     --burgundy: #541226;
     --burgundy-deep: #3f0e1d;
     --cream: #f6e6d6;
+    --gold: #d8b26a;
   }
   * { box-sizing: border-box; }
   body {
@@ -25,11 +26,10 @@
       linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-deep) 100%);
     display: flex;
     justify-content: center;
-    padding: 56px 20px 40px;
+    padding: 40px 20px 40px;
     position: relative;
     overflow-x: hidden;
   }
-  /* watermark botanico decorativo */
   body::before {
     content: "";
     position: absolute;
@@ -39,15 +39,77 @@
     background: radial-gradient(circle, rgba(228,197,168,0.10) 0%, transparent 65%);
     pointer-events: none;
   }
+
+  /* particulas flutuantes decorativas */
+  .sparkle {
+    position: fixed;
+    border-radius: 50%;
+    background: var(--gold);
+    opacity: 0.35;
+    pointer-events: none;
+    animation: floaty 7s ease-in-out infinite;
+  }
+  .sparkle.s1 { width: 6px; height: 6px; top: 12%; left: 14%; animation-delay: 0s; }
+  .sparkle.s2 { width: 4px; height: 4px; top: 22%; right: 12%; animation-delay: 1.4s; background: var(--rose); }
+  .sparkle.s3 { width: 8px; height: 8px; bottom: 30%; left: 8%; animation-delay: 2.6s; }
+  .sparkle.s4 { width: 5px; height: 5px; bottom: 18%; right: 16%; animation-delay: .8s; background: var(--rose); }
+  .sparkle.s5 { width: 3px; height: 3px; top: 45%; left: 5%; animation-delay: 3.5s; }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.35; }
+    50% { transform: translateY(-16px) scale(1.3); opacity: 0.7; }
+  }
+
   .wrap { max-width: 400px; width: 100%; text-align: center; position: relative; z-index: 1; }
 
+  /* cartao hero com wordmark animado */
+  .hero-card {
+    position: relative;
+    border-radius: 26px;
+    overflow: hidden;
+    background: linear-gradient(155deg, var(--clay) 0%, var(--burgundy) 65%);
+    padding: 30px 0 46px;
+    margin-bottom: 46px;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+    opacity: 0;
+    animation: cardIn .6s ease forwards;
+  }
+  .marquee-track {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.16;
+    pointer-events: none;
+  }
+  .marquee-row { display: flex; white-space: nowrap; animation: scrollX 16s linear infinite; }
+  .marquee-row.reverse { animation-direction: reverse; animation-duration: 20s; }
+  .marquee-row span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--gold);
+    padding-right: 28px;
+  }
+  @keyframes scrollX {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
   .avatar-ring {
-    width: 92px; height: 92px;
-    margin: 0 auto 18px;
+    position: relative;
+    width: 96px; height: 96px;
+    margin: 0 auto 14px;
     border-radius: 50%;
-    background: linear-gradient(145deg, var(--rose), var(--clay));
+    background: linear-gradient(145deg, var(--gold), var(--rose));
     padding: 3px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    animation: pulseRing 3s ease-in-out infinite;
+  }
+  @keyframes pulseRing {
+    0%, 100% { box-shadow: 0 8px 24px rgba(0,0,0,0.35), 0 0 0 0 rgba(216,178,106,0.35); }
+    50% { box-shadow: 0 8px 24px rgba(0,0,0,0.35), 0 0 0 10px rgba(216,178,106,0); }
   }
   .avatar-ring-inner {
     width: 100%; height: 100%;
@@ -57,22 +119,42 @@
   }
   .avatar-ring-inner img { width: 56%; height: 56%; object-fit: contain; }
 
+  .handle-badge {
+    display: inline-block;
+    background: linear-gradient(120deg, var(--gold), #eccf94);
+    color: var(--burgundy-deep);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    padding: 6px 16px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+  }
+
   h1 {
     color: var(--sand);
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.55rem;
     font-weight: 600;
-    margin: 0 0 8px;
+    margin: 22px 0 8px;
     letter-spacing: 0.01em;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
+    animation-delay: .1s;
   }
   p.sub {
     color: var(--rose);
     font-size: 0.76rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin: 0 0 34px;
+    margin: 0 0 30px;
     font-weight: 500;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
+    animation-delay: .18s;
   }
   p.sub::before, p.sub::after {
     content: "✦";
@@ -80,6 +162,15 @@
     margin: 0 10px;
     font-size: 0.65rem;
     vertical-align: middle;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes cardIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
   }
 
   a.link-btn {
@@ -98,14 +189,28 @@
     letter-spacing: 0.01em;
     margin-bottom: 14px;
     text-align: left;
+    position: relative;
+    overflow: hidden;
     transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
   }
   a.link-btn:hover {
     background: rgba(228, 197, 168, 0.16);
     border-color: var(--rose);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.015);
     box-shadow: 0 10px 22px rgba(0,0,0,0.22);
   }
+  a.link-btn::after {
+    content: "";
+    position: absolute;
+    top: 0; left: -60%;
+    width: 40%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
+    transform: skewX(-20deg);
+    transition: left .5s ease;
+  }
+  a.link-btn:hover::after { left: 130%; }
   a.link-btn .icon {
     width: 34px; height: 34px;
     min-width: 34px;
@@ -115,13 +220,13 @@
     font-size: 1rem;
   }
   a.link-btn.primary {
-    background: linear-gradient(135deg, var(--rose), var(--clay));
+    background: linear-gradient(135deg, var(--gold), var(--rose));
     border-color: transparent;
     color: var(--burgundy-deep);
     font-weight: 600;
   }
-  a.link-btn.primary .icon { background: rgba(255,255,255,0.35); }
-  a.link-btn.primary:hover { box-shadow: 0 10px 26px rgba(141,92,100,0.45); }
+  a.link-btn.primary .icon { background: rgba(255,255,255,0.4); }
+  a.link-btn.primary:hover { box-shadow: 0 10px 26px rgba(216,178,106,0.45); }
 
   .divider {
     display: flex; align-items: center; gap: 10px;
@@ -154,6 +259,9 @@
     padding: 7px 14px;
     border-radius: 999px;
     margin-bottom: 22px;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
+    animation-delay: .24s;
   }
 
   .cat-grid {
@@ -176,11 +284,13 @@
     font-size: 0.76rem;
     font-weight: 500;
     transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
   }
   a.cat-chip:hover {
     background: rgba(228, 197, 168, 0.14);
     border-color: var(--rose);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.03);
   }
 
   .urgency-note {
@@ -193,38 +303,54 @@
 </style>
 </head>
 <body>
+  <div class="sparkle s1"></div>
+  <div class="sparkle s2"></div>
+  <div class="sparkle s3"></div>
+  <div class="sparkle s4"></div>
+  <div class="sparkle s5"></div>
+
   <div class="wrap">
-    <div class="avatar-ring">
-      <div class="avatar-ring-inner">
-        <img src="logo-header.svg" alt="Logo">
+    <div class="hero-card">
+      <div class="marquee-track">
+        <div class="marquee-row"><span>ACHADINHOS DA JHÔ • ACHADINHOS DA JHÔ • </span><span>ACHADINHOS DA JHÔ • ACHADINHOS DA JHÔ • </span></div>
+        <div class="marquee-row reverse"><span>BELEZA • ACHADOS • BELEZA • ACHADOS • </span><span>BELEZA • ACHADOS • BELEZA • ACHADOS • </span></div>
+        <div class="marquee-row"><span>ACHADINHOS DA JHÔ • ACHADINHOS DA JHÔ • </span><span>ACHADINHOS DA JHÔ • ACHADINHOS DA JHÔ • </span></div>
       </div>
+
+      <div class="avatar-ring">
+        <div class="avatar-ring-inner">
+          <img src="logo-header.svg" alt="Logo">
+        </div>
+      </div>
+      <span class="handle-badge" id="handle-badge">@achadinhosdajho</span>
     </div>
+
     <h1 id="site-name">Achadinhos da Jhô</h1>
     <p class="sub">beleza &amp; achados</p>
 
     <div class="niche-banner">✨ Novidade: agora também skincare, cabelo, perfume e suplementos</div>
 
     <div class="cat-grid">
-      <a class="cat-chip" href="index.html?cat=skincare">🧴 Skincare</a>
-      <a class="cat-chip" href="index.html?cat=cabelo">💇‍♀️ Cabelo</a>
-      <a class="cat-chip" href="index.html?cat=perfume">🌸 Perfumes</a>
-      <a class="cat-chip" href="index.html?cat=suplementos">💊 Suplementos</a>
+      <a class="cat-chip" style="animation-delay:.30s" href="index.html?cat=skincare">🧴 Skincare</a>
+      <a class="cat-chip" style="animation-delay:.35s" href="index.html?cat=cabelo">💇‍♀️ Cabelo</a>
+      <a class="cat-chip" style="animation-delay:.40s" href="index.html?cat=perfume">🌸 Perfumes</a>
+      <a class="cat-chip" style="animation-delay:.45s" href="index.html?cat=suplementos">💊 Suplementos</a>
     </div>
 
-    <a class="link-btn primary" id="link-site" href="index.html">
+    <a class="link-btn primary" style="animation-delay:.5s" id="link-site" href="index.html">
       <span class="icon">🛍️</span> Ver catálogo completo com preços
     </a>
-    <a class="link-btn" id="link-whatsapp" href="#" target="_blank">
+    <a class="link-btn" style="animation-delay:.56s" id="link-whatsapp" href="#" target="_blank">
       <span class="icon">💌</span> Grupo VIP no WhatsApp — ofertas em primeira mão
     </a>
     <p class="urgency-note">🔥 Preço bom não espera — as melhores ofertas saem do grupo primeiro</p>
 
     <div class="divider">me segue por aqui também</div>
 
-    <a class="link-btn" id="link-instagram" href="#" target="_blank">
+    <a class="link-btn" style="animation-delay:.62s" id="link-instagram" href="#" target="_blank">
       <span class="icon">📸</span> Instagram
     </a>
-    <a class="link-btn" id="link-tiktok" href="#" target="_blank" style="display:none">
+    <a class="link-btn" style="animation-delay:.68s" id="link-tiktok" href="#" target="_blank">
       <span class="icon">🎀</span> TikTok
     </a>
 
@@ -236,8 +362,11 @@
   document.getElementById("site-name").textContent = SITE_CONFIG.siteName;
   document.getElementById("link-whatsapp").href = SITE_CONFIG.whatsappGroupUrl;
   document.getElementById("link-instagram").href = SITE_CONFIG.instagramUrl;
+  var handleFromName = "@" + (SITE_CONFIG.siteName || "achadinhosdajho").toLowerCase().replace(/[^a-z0-9]/g, "");
+  document.getElementById("handle-badge").textContent = handleFromName;
 
   var tiktokBtn = document.getElementById("link-tiktok");
+  tiktokBtn.style.display = "none";
   if (SITE_CONFIG.tiktokUrl && SITE_CONFIG.tiktokUrl.indexOf("COLOQUE-SEU-USUARIO-AQUI") === -1) {
     tiktokBtn.href = SITE_CONFIG.tiktokUrl;
     tiktokBtn.style.display = "flex";
