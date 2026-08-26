@@ -8,21 +8,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap">
 <style>
   :root {
-    --teal-deep: #0d3538;
-    --teal: #1f6e73;
-    --teal-mid: #3a9da2;
-    --teal-light: #8ecfd1;
+    --teal-deep: #6b1a45;
+    --teal: #a13369;
+    --teal-mid: #c4508a;
+    --teal-light: #f3addb;
     --gold: #c9985f;
     --gold-light: #e3bd88;
     --cream: #f6f1e6;
-    --ink: #0c2426;
+    --ink: #3a0f27;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     min-height: 100vh;
     font-family: 'Jost', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
-    background: linear-gradient(180deg, #1c5a5f 0%, #163f43 55%, #123437 100%);
+    background: linear-gradient(180deg, #c25a90 0%, #8f2a5f 55%, #591838 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,8 @@
   .sparkle.s2 { width: 4px; height: 4px; top: 22%; right: 12%; animation-delay: 1.4s; background: #fff; }
   .sparkle.s3 { width: 8px; height: 8px; bottom: 55%; left: 8%; animation-delay: 2.6s; }
   .sparkle.s4 { width: 5px; height: 5px; bottom: 60%; right: 16%; animation-delay: .8s; background: #fff; }
+  .sparkle.s5 { width: 7px; height: 7px; top: 65%; right: 22%; animation-delay: 1.9s; }
+  .sparkle.s6 { width: 4px; height: 4px; top: 8%; right: 30%; animation-delay: 3.1s; background: #fff; }
   @keyframes floaty {
     0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; }
     50% { transform: translateY(-16px) scale(1.3); opacity: 0.85; }
@@ -140,13 +142,18 @@
     transform: translateY(-2px);
   }
   a.link-btn .icon {
-    width: 30px; height: 30px;
-    min-width: 30px;
+    width: 34px; height: 34px;
+    min-width: 34px;
     border-radius: 50%;
     background: rgba(13,53,56,0.12);
     display: flex; align-items: center; justify-content: center;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
+  .icon-shop { background: linear-gradient(135deg, var(--teal-deep), var(--teal)); color: var(--gold-light); }
+  .icon-whatsapp { background: linear-gradient(135deg, #25d366, #128c4c); color: #fff; }
+  .icon-instagram { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4); color: #fff; }
+  .icon-tiktok { background: linear-gradient(135deg, #000, #333); color: #fff; }
   a.link-btn .label-sub {
     display: block;
     font-size: 0.65rem;
@@ -186,6 +193,38 @@
     opacity: 0;
     animation: fadeUp .5s ease forwards;
     animation-delay: .26s;
+  }
+
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    opacity: 0;
+    animation: fadeUp .5s ease forwards;
+    animation-delay: .24s;
+  }
+  .stat-pill {
+    flex: 1;
+    background: rgba(246, 241, 230, 0.07);
+    border: 1px solid rgba(246, 241, 230, 0.16);
+    border-radius: 14px;
+    padding: 10px 6px;
+  }
+  .stat-pill strong {
+    display: block;
+    color: var(--gold-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .stat-pill span {
+    display: block;
+    color: var(--teal-light);
+    font-size: 0.6rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 2px;
   }
 
   .cat-grid {
@@ -251,6 +290,8 @@
   <div class="sparkle s2"></div>
   <div class="sparkle s3"></div>
   <div class="sparkle s4"></div>
+  <div class="sparkle s5"></div>
+  <div class="sparkle s6"></div>
 
   <div class="wrap">
     <div class="avatar-ring">
@@ -269,6 +310,12 @@
       <img src="Woman_holding_makeup_product_202608261349.jpeg" alt="Jhô, mascote da Achadinhos da Jhô">
     </div>
 
+    <div class="stats-row">
+      <div class="stat-pill"><strong>50+</strong><span>Produtos</span></div>
+      <div class="stat-pill"><strong>4.9★</strong><span>Avaliação</span></div>
+      <div class="stat-pill"><strong>3</strong><span>Lojas</span></div>
+    </div>
+
     <div class="niche-banner">✨ agora também skincare, cabelo, perfume e suplementos</div>
 
     <div class="cat-grid">
@@ -279,21 +326,21 @@
     </div>
 
     <a class="link-btn" style="animation-delay:.5s" id="link-site" href="index.html">
-      <span class="icon">🛍️</span>
+      <span class="icon icon-shop">🛍️</span>
       <span>Ver catálogo completo com preços</span>
     </a>
     <a class="link-btn" style="animation-delay:.56s" id="link-whatsapp" href="#" target="_blank">
-      <span class="icon">💄</span>
+      <span class="icon icon-whatsapp">💬</span>
       <span>Grupo de Maquiagem<span class="label-sub">Comunidade no WhatsApp • entrada grátis</span></span>
     </a>
 
     <div class="divider">me segue por aqui também</div>
 
     <a class="link-btn secondary" style="animation-delay:.62s" id="link-instagram" href="#" target="_blank">
-      <span class="icon">📸</span> Instagram
+      <span class="icon icon-instagram">📸</span> Instagram
     </a>
     <a class="link-btn secondary" style="animation-delay:.68s" id="link-tiktok" href="#" target="_blank">
-      <span class="icon">🎀</span> TikTok
+      <span class="icon icon-tiktok">🎵</span> TikTok
     </a>
 
     <footer>Este perfil usa links de afiliado. Comprando por eles, você não paga nada a mais e ajuda o canal <span class="heart">♥</span></footer>
