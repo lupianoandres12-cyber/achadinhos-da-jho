@@ -20,6 +20,12 @@ const STORE_LABELS = {
   shopee: "Shopee"
 };
 
+const STORE_BADGE = {
+  mercadolivre: "ML",
+  amazon: "AMZ",
+  shopee: "SHP"
+};
+
 // CTA personalizado por categoria — deixa o botão de compra mais persuasivo e específico
 const CTA_LABELS = {
   batom: "Garantir meu batom",
@@ -50,6 +56,11 @@ function applyBranding() {
   document.getElementById("site-tagline").textContent = SITE_CONFIG.tagline;
   document.getElementById("whatsapp-fab").href = SITE_CONFIG.whatsappGroupUrl;
   document.getElementById("instagram-fab").href = SITE_CONFIG.instagramUrl;
+
+  var announceWhats = document.getElementById("announce-whatsapp");
+  if (announceWhats) announceWhats.href = SITE_CONFIG.whatsappGroupUrl;
+  var igHeader = document.getElementById("instagram-header");
+  if (igHeader) igHeader.href = SITE_CONFIG.instagramUrl;
 }
 
 function cheapestStore(prices) {
@@ -125,6 +136,7 @@ function renderProducts() {
     card.innerHTML = `
       <div class="card-top">
         <div class="badges-left">${badgeDiscount}${badgeUrgent}</div>
+        <span class="store-badge store-badge-${best}">${STORE_BADGE[best] || ""}</span>
         ${badgeBestseller ? `<div class="badges-right">${badgeBestseller}</div>` : ""}
         <span class="cat-tag">${CATEGORY_LABELS[p.category] || ""}</span>
         <img class="product-art" src="${p.image ? p.image : 'art-' + p.category + '.svg'}" alt="${p.name}" loading="lazy">
